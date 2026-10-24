@@ -1,4 +1,4 @@
-# Mama S. Ceesay — Portfolio
+# Mama S. Ceesay Portfolio
 
 A personal portfolio built with HTML, CSS and vanilla JavaScript. It introduces
 my background and selected projects, including team work, coursework and
