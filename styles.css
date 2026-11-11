@@ -78,6 +78,7 @@ h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.02;text-wrap:b
 .hero .lede{max-width:44ch;margin-top:22px;color:var(--mute);font-size:1rem}
 .cabin{position:absolute;inset:0;z-index:2;pointer-events:none}
 .desk-scene{position:absolute;inset:0;will-change:transform}
+.leader-caption{position:absolute;z-index:3;top:calc(24vh - 42px);right:3vw;padding:7px 14px;border:1px solid var(--gold);background:var(--ink);color:var(--gold-hi);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase}
 .portrait-panel{position:absolute;right:3vw;bottom:10vh;width:min(34vw,440px);height:66vh;overflow:hidden;
   border:1px solid var(--line);border-radius:48% 48% 5px 5px;
   background:radial-gradient(ellipse at 50% 38%,rgba(201,169,106,.2),rgba(138,111,60,.07) 48%,transparent 74%);
@@ -98,6 +99,7 @@ h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.02;text-wrap:b
 @media(max-width:860px){
   .hero-copy{left:0;right:0;width:auto;top:10vh;transform:none;text-align:center;padding-inline:20px}
   .hero h1{font-size:clamp(2.6rem,12vw,4rem)}.hero h2{font-size:1.25rem}.hero .lede{display:none}
+  .leader-caption{top:calc(31vh - 38px);right:auto;left:50%;transform:translateX(-50%)}
   .portrait-panel{left:50%;right:auto;top:31vh;bottom:auto;width:45vw;height:32vh;transform:translateX(-50%)}
   .stmts{inset:72vh 22px 3vh 22px;align-content:start}
   .cue{left:50%;transform:translateX(-50%);text-align:center}
@@ -153,8 +155,10 @@ h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.02;text-wrap:b
 .team-head .eyebrow{display:block;margin-bottom:14px}
 .team-head h2{font-size:clamp(2.4rem,5vw,4.4rem);margin-bottom:18px}
 .team-head p{max-width:52ch;color:var(--mute)}
-.team-card{max-width:720px;display:grid;grid-template-columns:150px 1fr;align-items:center;gap:26px;border:1px solid var(--line);padding:clamp(24px,4vw,42px);background:var(--card-bg)}
+.team-roster{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:20px}
+.team-card{display:grid;grid-template-columns:120px 1fr;align-items:center;gap:22px;border:1px solid var(--line);padding:clamp(20px,3vw,34px);background:var(--card-bg)}
 .team-photo{width:150px;aspect-ratio:1;object-fit:cover;object-position:center 35%;border:1px solid var(--line);border-radius:50%}
+.team-card .team-photo{width:120px}
 .team-card .badge{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
 .team-card h3{font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--gold-hi);margin:14px 0 8px}
 .team-card p{color:var(--mute)}
