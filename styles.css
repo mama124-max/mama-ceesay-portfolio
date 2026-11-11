@@ -153,10 +153,12 @@ h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.02;text-wrap:b
 .team-head .eyebrow{display:block;margin-bottom:14px}
 .team-head h2{font-size:clamp(2.4rem,5vw,4.4rem);margin-bottom:18px}
 .team-head p{max-width:52ch;color:var(--mute)}
-.team-card{max-width:720px;border:1px solid var(--line);padding:clamp(24px,4vw,42px);background:var(--card-bg)}
+.team-card{max-width:720px;display:grid;grid-template-columns:150px 1fr;align-items:center;gap:26px;border:1px solid var(--line);padding:clamp(24px,4vw,42px);background:var(--card-bg)}
+.team-photo{width:150px;aspect-ratio:1;object-fit:cover;object-position:center 35%;border:1px solid var(--line);border-radius:50%}
 .team-card .badge{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
 .team-card h3{font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--gold-hi);margin:14px 0 8px}
 .team-card p{color:var(--mute)}
+@media(max-width:520px){.team-card{grid-template-columns:1fr;text-align:center}.team-photo{justify-self:center}}
 
 /* credentials */
 .specs{padding-block:18vh 12vh;background:var(--ink)}
