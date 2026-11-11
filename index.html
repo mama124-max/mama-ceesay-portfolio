@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Mama S. Ceesay is a frontend developer and Information Systems student in The Gambia. Explore her projects, skills, and experience.">
+  <title>Mama S. Ceesay | Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap">
+</head>
+<body>
+
+<div class="cursor" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="logo" href="#hero" data-go="hero" aria-label="Mama S. Ceesay, home">MAMA CEESAY</a>
+  <nav id="primary-menu" aria-label="Primary"><ul>
+    <li><a href="#about" data-go="about">About</a></li>
+    <li><a href="#work" data-go="benefits">Work</a></li>
+    <li><a href="#team" data-go="team">Team</a></li>
+    <li><a href="#skills" data-go="skills">Credentials</a></li>
+    <li><a href="#global" data-go="global">Beyond code</a></li>
+  </ul></nav>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+  <button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode"><span aria-hidden="true">☼</span></button>
+  <button class="btn" type="button" data-contact>Contact</button>
+</header>
+
+<main>
+<section class="hero" id="hero">
+  <div class="glow"></div>
+  <div class="hero-copy">
+    <span class="eyebrow">Portfolio 2026</span>
+    <h1>Mama S.<br>Ceesay</h1>
+    <h2>Frontend developer and Information Systems student</h2>
+    <p class="lede">I build clear, useful web tools from The Gambia, and I am just getting started.</p>
+  </div>
+  <div class="cabin">
+    <div class="desk-scene">
+      <div class="portrait-panel">
+        <img src="images/mama-portrait-cutout.png?v=3" alt="Portrait of Mama S. Ceesay wearing a black hijab and white blouse" width="768" height="1024">
+      </div>
+    </div>
+  </div>
+  <div class="stmts" id="about">
+    <div class="stmt"><span class="eyebrow">About</span><h2>I am a frontend developer and Information Systems student in The Gambia, building web tools that people actually use.</h2></div>
+    <div class="stmt"><h3>Education</h3><p>Third-year BSc Information Systems at the University of The Gambia, School of Information Technology and Communication. I have studied Java and object-oriented design in depth, alongside cloud computing, access control and systems analysis.</p></div>
+    <div class="stmt"><h3>How I build</h3><p>I started web development from scratch in January 2026 at Jasseh Code Camp, then kept going with HTML, CSS, JavaScript, Node and Express. I ship small, finish what I start, and learn from feedback.</p></div>
+    <div class="stmt"><h3>Leadership</h3><p>I led BETECHIFIED, a ten-person frontend team across The Gambia, Nigeria, Ghana and Sierra Leone. My hackathon team took first place at UTG-ITCA Hackathon 1.0, where I handled testing, bug fixing, naming, design and branding.</p></div>
+    <div class="stmt"><h3>What is next</h3><p>A career in software engineering, and postgraduate study abroad. Until then I keep building, one project at a time.</p></div>
+  </div>
+  <div class="cue">Scroll to explore<span>My story and work</span></div>
+</section>
+
+<section class="legacy" id="work-intro">
+  <div class="top"><span class="eyebrow">Portfolio</span></div>
+  <div class="big" aria-label="Selected Work">
+    <span class="row" aria-hidden="true"><span class="stroke">Selected</span><span class="fill">Selected</span></span>
+    <span class="row" aria-hidden="true"><span class="stroke">Work</span><span class="fill">Work</span></span>
+  </div>
+  <div class="sweep" aria-hidden="true"></div>
+  <p class="sub">Built, shipped and still improving</p>
+</section>
+
+<section class="ben" id="work">
+  <div class="ben-title"><span class="eyebrow">Projects</span><h2>Things I have built</h2></div>
+  <div class="project-tools">
+    <label for="project-search">Search projects</label>
+    <input id="project-search" type="search" placeholder="Try JavaScript, GamFix, or design" autocomplete="off">
+    <p id="project-results" role="status" aria-live="polite"></p>
+  </div>
+  <article class="card"><div class="txt"><span class="badge">First place · UTG-ITCA Hackathon 1.0</span><h3>GamFix</h3>
+    <p>Report a water, electricity, road, waste or safety problem with one photo and one sentence, by WhatsApp, SMS, Telegram or web. Built by a team of five for Challenge 01. I handled testing, bug fixing, the name, the design and the branding.</p>
+    <div class="tags"><span>Team of five</span><span>Branding</span><span>QA</span></div>
+    <a class="lnk" href="https://gamciv.pocketsoftware.dev" target="_blank" rel="noopener">View live</a></div>
+    <div class="art"><div class="shots">
+      <img src="images/gf3.jpg" alt="GamFix home page: Your street. Your report. Your fix." loading="eager">
+      <img src="images/gf1.jpg" alt="GamFix report categories: water, electricity, roads, waste, safety and other">
+      <img src="images/gf2.jpg" alt="GamFix SMS conversation showing a report received and a status update">
+    </div></div></article>
+  <article class="card"><div class="txt"><span class="badge">In progress</span><h3>UTG Campus Help Desk</h3>
+    <p>A web-based complaint management system for the University of The Gambia with student, lecturer and admin roles, about 85 real courses and 38 lecturers, meeting scheduling, and a flag for unanswered complaints after 48 hours.</p>
+    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Supabase</span></div>
+    <a class="lnk" href="https://mama124-max.github.io/utg-help-desk/" target="_blank" rel="noopener">View live</a></div>
+    <div class="art"><svg viewBox="0 0 240 240" aria-hidden="true"><path class="ic" d="M50,60 L190,60 L190,150 L110,150 L74,184 L74,150 L50,150 Z"/><path class="ic" d="M82,92 L158,92 M82,116 L132,116"/><circle class="ic" cx="176" cy="176" r="24"/><path class="ic" d="M165,176 L173,184 L188,168"/></svg></div></article>
+  <article class="card"><div class="txt"><span class="badge">Project leader</span><h3>BETECHIFIED</h3>
+    <p>A Medium-inspired landing page built in HTML and CSS by a ten-person team across four countries. I led the group, coordinated the work and kept submissions on schedule.</p>
+    <div class="tags"><span>HTML</span><span>CSS</span><span>Teamwork</span></div>
+    <a class="lnk" href="https://mama124-max.github.io/medium-landing-page/" target="_blank" rel="noopener">View live</a></div>
+    <div class="art"><svg viewBox="0 0 240 240" aria-hidden="true"><circle class="ic" cx="120" cy="120" r="22"/><circle class="ic" cx="50" cy="60" r="12"/><circle class="ic" cx="190" cy="60" r="12"/><circle class="ic" cx="50" cy="182" r="12"/><circle class="ic" cx="190" cy="182" r="12"/><circle class="ic" cx="120" cy="30" r="10"/><path class="ic" d="M103,106 L58,68 M137,106 L182,68 M103,134 L58,174 M137,134 L182,174 M120,98 L120,40"/></svg></div></article>
+  <article class="card"><div class="txt"><span class="badge">Bootcamp project</span><h3>FitLife Gambia</h3>
+    <p>A five-page business website deployed on GitHub Pages, built during my frontend bootcamp to practise structure, responsive layout and clean styling.</p>
+    <div class="tags"><span>HTML</span><span>CSS</span><span>GitHub Pages</span></div></div>
+    <div class="art"><svg viewBox="0 0 240 240" aria-hidden="true"><path class="ic" d="M24,124 L74,124 L90,84 L116,168 L138,100 L152,124 L216,124"/><path class="ic" d="M40,198 L200,198 M40,44 L200,44" stroke-dasharray="3 8"/></svg></div></article>
+  <article class="card"><div class="txt"><span class="badge">Backend and data</span><h3>APIs and models</h3>
+    <p>A note-taking API in Node and Express, built step by step with routes, parameters and POST requests tested in Postman. Also a working student pass or fail classification model in Python using NumPy, Pandas and scikit-learn.</p>
+    <div class="tags"><span>Node</span><span>Express</span><span>Python</span><span>scikit-learn</span></div></div>
+    <div class="art"><svg viewBox="0 0 240 240" aria-hidden="true"><path class="ic" d="M92,56 Q64,56 64,84 L64,104 Q64,120 44,120 Q64,120 64,136 L64,156 Q64,184 92,184"/><path class="ic" d="M148,56 Q176,56 176,84 L176,104 Q176,120 196,120 Q176,120 176,136 L176,156 Q176,184 148,184"/><circle cx="106" cy="120" r="4" fill="#c9a96a"/><circle cx="120" cy="120" r="4" fill="#c9a96a"/><circle cx="134" cy="120" r="4" fill="#c9a96a"/></svg></div></article>
+</section>
+
+<section class="team-section pad" id="team">
+  <div class="wrap">
+    <div class="team-head">
+      <span class="eyebrow">Our team</span>
+      <h2>Three people, building together</h2>
+      <p>Team of three. I’ll add the remaining member details when they’re confirmed.</p>
+    </div>
+    <article class="team-card">
+      <span class="badge">Team contribution</span>
+      <h3>Aziegbe Favour Osetuohamen</h3>
+      <p>Editing the PowerPoint presentation slides.</p>
+    </article>
+  </div>
+</section>
+
+<section class="specs pad" id="skills">
+  <div class="wrap">
+    <div class="spec-head">
+      <h2>Skills, education <b>and craft</b></h2>
+      <p>A third-year degree, a frontend bootcamp, and a steady habit of building real things and finishing them.</p>
+    </div>
+    <div class="skill-groups" aria-label="Technical skills">
+      <section class="skill-group" aria-labelledby="frontend-skills">
+        <h3 id="frontend-skills">Frontend</h3>
+        <ul><li>HTML5</li><li>CSS</li><li>JavaScript</li><li>Responsive design</li></ul>
+      </section>
+      <section class="skill-group" aria-labelledby="backend-skills">
+        <h3 id="backend-skills">Backend</h3>
+        <ul><li>Node.js</li><li>Express</li><li>Supabase</li><li>REST APIs</li></ul>
+      </section>
+      <section class="skill-group" aria-labelledby="programming-skills">
+        <h3 id="programming-skills">Programming and data</h3>
+        <ul><li>Java</li><li>Python</li><li>NumPy</li><li>Pandas</li><li>scikit-learn</li></ul>
+      </section>
+    </div>
+    <div class="grid">
+      <div class="spec"><small>Degree</small><strong>BSc Information Systems</strong><span>University of The Gambia, SITC, third year</span></div>
+      <div class="spec"><small>Bootcamp</small><strong>Jasseh Code Camp</strong><span>Frontend Development Program, Level 1, from January 2026</span></div>
+      <div class="spec"><small>Certificates</small><strong>QuantumNet and Jasseh</strong><span>Completed and earned</span></div>
+      <div class="spec"><small>Frontend</small><strong>HTML · CSS · JavaScript</strong><span>Responsive layouts, single-page apps, GitHub Pages</span></div>
+      <div class="spec"><small>Backend</small><strong>Node · Express · Supabase</strong><span>REST routes, authentication, role-based access</span></div>
+      <div class="spec"><small>Programming</small><strong>Java · Python</strong><span>Object-oriented design, data structures, NumPy, Pandas, scikit-learn</span></div>
+    </div>
+    <div class="journey">
+      <h3>Journey</h3>
+      <ul class="tl">
+        <li class="tl-line" aria-hidden="true"></li>
+        <li><small>January 2026</small><b>Starting from zero</b><p>Joined Jasseh Code Camp and began learning web development.</p></li>
+        <li><small>September 2026</small><b>Leading BETECHIFIED</b><p>Led a ten-person team across four countries and presented the final project.</p></li>
+        <li><small>October 2026</small><b>First place</b><p>Won UTG-ITCA Hackathon 1.0 with GamFix.</p></li>
+        <li><small>Ahead</small><b>Engineering and study abroad</b><p>A software engineering career, then postgraduate study abroad.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="global pad" id="global">
+  <div class="wrap global-grid">
+    <div class="globe"><canvas id="globe" role="img" aria-label="Globe centred on The Gambia with links to Nigeria, Ghana and Sierra Leone"></canvas></div>
+    <div>
+      <span class="eyebrow">Beyond code</span>
+      <h2>Based in The Gambia, building with people across West Africa</h2>
+      <div class="kpis"><div><b>10</b><small>Teammates led</small></div><div><b>4</b><small>Countries</small></div><div><b id="clock">--:--</b><small>Local time</small></div></div>
+      <ul class="beyond">
+        <li><b>Capture by CeeTrio</b><span>A photography brand I co-founded with my sisters.</span></li>
+        <li><b>Rooted: Faith. Life. Real Talk.</b><span>A podcast project about faith, life and honest conversation.</span></li>
+        <li><b>Data Science Club, UTG</b><span>An active member at the University of The Gambia.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="closing pad" id="contact">
+  <h2>Let us build something good</h2>
+  <p>Open to internships, collaborations and conversations about frontend work.</p>
+  <button class="btn solid" type="button" data-contact>Get in touch</button>
+  <div class="wrap">
+    <footer>
+      <b>MAMA CEESAY</b>
+      <small>Frontend developer · The Gambia</small>
+      <small>© 2026 Mama S. Ceesay. All rights reserved.</small>
+    </footer>
+  </div>
+</section>
+</main>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="sheet">
+    <span class="eyebrow">Contact</span>
+    <h3 id="mt">Say hello</h3>
+    <p class="s">Send a message or reach me directly by email.</p>
+    <form id="contact-form">
+      <label for="contact-name">Your name</label>
+      <input id="contact-name" name="name" autocomplete="name" required maxlength="80">
+      <label for="contact-email">Your email</label>
+      <input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="254">
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" name="message" rows="4" required maxlength="2000"></textarea>
+      <button class="btn solid" type="submit">Prepare email</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+    <div class="row2"><em>Email</em><span id="mail">mamaceesy344@gmail.com</span><button class="btn" type="button" id="copy">Copy</button></div>
+    <div class="row2"><em>GitHub</em><a href="https://github.com/mama124-max" target="_blank" rel="noopener"><span>github.com/mama124-max</span></a></div>
+    <div class="actions"><button class="btn" type="button" data-close>Close</button></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+
+</body></html>
